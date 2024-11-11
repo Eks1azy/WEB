@@ -14,19 +14,29 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <!-- ADD LOGO -->
-                <a href="./index.html">
-                    <img src="./images/" alt="Логотип сучасної пекарні">
-                </a>
-                <ul class="point">
-                    <li><a class="link" href="#traditional-section" target="_blank">Наші традиції</a></li>
-                    <li><a class="link" href="#chef-sections">Шеф кухарі</a></li>
-                    <li><a class="link" href="#format-sections">Формати</a></li>
-                    <li><a class="link" href="#contact-sections">Контакти</a></li>
-                </ul>
-            </nav>
-            <button type="button" class="button-main">Замовити дзвінок</button>
+            <div class="header-container">
+                <nav class="header-nav">
+                    <!-- ADD LOGO -->
+                    <a href="./index.html">
+                        <img src="./images/" alt="Логотип сучасної пекарні">
+                    </a>
+                    <ul class="point header-menu">
+                        <li>
+                            <a class="link" href="#traditional-section" target="_blank">Наші традиції</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#chef-sections">Шеф кухарі</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#format-sections">Формати</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contact-sections">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="button-main">Замовити дзвінок</button>
+            </div>
         </div>
     </header>
     <main>
@@ -38,7 +48,7 @@
                 </h1>
             </div> 
         </section>
-        <section>
+        <section class="advantages-section">
             <div class="container">
                 <h2 class="visually-hidden">Наші переваги</h2>
                 <ul class="advantages-list">
@@ -49,19 +59,24 @@
             </div>
         </section>
         <!-- 2 -->
-        <section class="traditional-section section" id="traditional-section"> 
+        <section class="traditions-section section" id="traditional-section"> 
             <div class="container">
-                <h2 class="traditions-title section-title">Новий формат традицій</h2> 
-                <p>
-                    <span class="traditions-text">shop bakery</span> - це пекарня, яка взяла все найкраще, і 
-                    зберегла смак традиційної випічки та натуральність інгрідієнтів 
-                </p> 
-                <p>
-                    Ми працюємо як найвідоміші мережі - 
-                    <span class="traditions-text">5 хвилин і замовлення готове.</span> А    
-                    ще у наших пекарень стильний дизайн та висока якість обслуговування!
-                </p>
-                <img src="./images/" alt="Чоловік пекар дивиться на батони із посмішкою">
+                <div class="traditions-container">
+                    <div class="traditions-content">
+                        <h2 class="traditions-title section-title">Новий формат традицій</h2> 
+                        <p>
+                            <span class="traditions-text">shop bakery</span> - це пекарня, яка взяла все найкраще, і 
+                            зберегла смак традиційної випічки та натуральність інгрідієнтів 
+                        </p> 
+                        <p>
+                            Ми працюємо як найвідоміші мережі - <br> 
+                            <span class="traditional-text">5 хвилин і замовлення готове.</span> <br>
+                            А ще у наших пекарень стильний дизайн <br>
+                            та висока якість обслуговування!
+                        </p>
+                    </div>
+                    <img src="./images/" alt="Чоловік пекар дивиться на батони із посмішкою">
+                </div>
             </div>
         </section>
         <!-- 3 -->
@@ -99,9 +114,9 @@
         <section class="section" id="format-sections">
             <div class="container">
                 <h2 class="formats-title section-title">Формати</h2>
-            <ul class="point">
-                <li>
-                    <article>
+            <ul class="point formats-list">
+                <li class="formats-item">
+                    <article class="format-card">
                         <h3 class="format-title" lang="en">Warlus</h3>
                         <div class="format-text">
                             <p>Площа: до 120 м2</p>
@@ -114,8 +129,8 @@
                         </div>
                     </article>
                 </li>
-                <li>
-                    <article>
+                <li class="formats-item">
+                    <article class="format-card">
                         <h3 class="format-title" lang="en">Horshehoe</h3>
                         <div class="format-text">
                             <p>Площа: до 120 м2</p>
@@ -128,8 +143,8 @@
                         </div>
                     </article>
                 </li>
-                <li>
-                    <article>
+                <li class="formats-item">
+                    <article class="format-card">
                         <h3 class="format-title" lang="en">Handlebar</h3>
                         <div class="format-text">
                             <p>Площа: до 25 м2</p>
