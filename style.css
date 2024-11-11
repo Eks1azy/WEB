@@ -29,6 +29,8 @@ address {
 }
 
 ul {
+    margin: 0;
+    padding: 0;  
     list-style-type: none;
 }
 
@@ -54,6 +56,7 @@ ul {
 
 /*  BUTTON */
 .button-main {
+    padding: 16px 32px;
     color: var(--color--primary-light);
     font-weight: 600;
     background: var(--color--brand-light);
@@ -75,7 +78,7 @@ ul {
 
 .link:hover {
     color: var(--color--brand-light);
-    font-weight: 600;
+    
 }
 
 .address-link {
@@ -100,7 +103,6 @@ ul {
 .hero-title {
     color: var(--color--primary-light);
     text-align: center;
-    text-shadow: 0px -2px 4px black;
     font-size: 128px;
     font-weight: 900;
     margin-bottom: 0;
@@ -111,9 +113,22 @@ ul {
 }
 
 /* ADVANTAGES SECTION*/
-.advantages-list {
-    color: var(--color--primary-light);
+.advantages-section {
     background-color: var(--color--brand-light); 
+    padding: 16px 0;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.advantages-item {
+    color: var(--color--primary-light);
+    font-size: 20px;
+    font-weight: 300;
+
 }
 
 /* SECTIONS SECTION */
@@ -128,12 +143,27 @@ ul {
 }
 
 /* TRADITIONS SECTION */
-.traditional-section {
+.traditions-section {
     padding-top: 96px;
+}
+
+.traditions-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.traditions-content {
+    min-width: 710px;
 }
 
 .traditions-text {
     text-transform: uppercase;
+    color: var(--color--brand-light);
+    font-weight: 600;
+}
+
+.traditional-text {
     color: var(--color--brand-light);
     font-weight: 600;
 }
@@ -159,6 +189,22 @@ ul {
 }
 
 /* FORMATS SECTIONS */
+.format-card {
+    padding: 24px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .format-title {
     font-size: 24px;
     font-weight: 600;
@@ -180,4 +226,25 @@ ul {
 /* CONTACT SECTIONS */
 .contact-title {
     margin-bottom: 16px;
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
 }
